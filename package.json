@@ -1,0 +1,23 @@
+{
+  "name": "mean",
+  "version": "1.0.0",
+  "description": "Mean App",
+  "main": "server.js",
+  "scripts": {
+       "start": "node server.js",
+    "build": "cd client && ng build --prod && cd.. && node server.js"
+     },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/revathykannan/meanemp"
+  },
+  "author": "MaheFc",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bootstrap": "^3.3.7",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.2"
+  }
+}
