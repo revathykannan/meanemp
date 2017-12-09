@@ -24,7 +24,7 @@ mongoose.connect(config.uri,(err) => {
       //  })
 
 var app = express();
-var port = process.env.PORT || 3000 ;
+
 app.get('/', function(req, res){
     res.send("Hello from MaheFc...");
 });
@@ -41,7 +41,6 @@ app.get('*',(req,res)=>{
 });
 
 //Start Server:listen on port 3000
-app.listen(port, function(){
-    console.log("Listening on port  "+ port);
-})
+   app.listen(process.env.PORT || 3000) ;
+
 })
