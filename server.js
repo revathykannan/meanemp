@@ -8,11 +8,11 @@ const model = require('./model');
 //var config = "mongodb://localhost:27017/employees";
 mongoose.Promise = global.Promise;
 var url1 = "mongodb://revathy:admin123@ds133746.mlab.com:33746/meanemp";
-mongoose.connect(config.uri,(err) => {
+mongoose.connect(uri) => {
     if (err) {
         console.log('Could NOT connect to database: ', err);
     } else {
-        console.log('Connected to database: ' + url1);
+        console.log('Connected to database: ' + uri);
 }
    // .connection
    //     .on('connected',function(){
