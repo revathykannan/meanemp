@@ -7,7 +7,8 @@ const routes = require('./routes');
 const model = require('./model');
 //var config = "mongodb://localhost:27017/employees";
 mongoose.Promise = global.Promise;
-var url1 = "mongodb://revathy:admin123@ds133746.mlab.com:33746/meanemp";
+var uri = "mongodb://revathy:admin123@ds133746.mlab.com:23896/employees";
+
 mongoose.connect(uri) => {
     if (err) {
         console.log('Could NOT connect to database: ', err);
